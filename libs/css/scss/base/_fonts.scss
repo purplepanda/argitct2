@@ -1,0 +1,24 @@
+// fonts
+@mixin font-face($family, $file) {
+     @font-face{
+        font-family: $family;
+        src: url('#{$file}.eot');
+        src: url('#{$file}.eot?#iefix') format('embedded-opentype'),
+             url('#{$file}.woff') format('woff'),
+             url('#{$file}.ttf') format('truetype'),
+             url('#{$file}.otf') format('opentype');
+    }
+}
+@mixin font-face-simple($family, $file) {
+     @font-face{
+        font-family: $family;
+        src: url('#{$file}.ttf') format('truetype');
+    }
+}
+
+@include font-face(FontAwesome, 'fonts/FontAwesome/FontAwesome');
+
+$fontFontAwesome: "FontAwesome";
+$fontBookman: "Bookman Old Style", Bookman, serif;
+$fontLucida: Lucida Sans Unicode;
+$fontVerdana: Verdana, Geneva, sans-serif;

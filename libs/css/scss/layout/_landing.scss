@@ -1,0 +1,50 @@
+#landing {
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+
+    background-image: url(../../../../libs/img/crackle-table-mobile.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    @media only screen and (min-width: $bp-mobile) {
+        background-image: url(../../../../libs/img/crackle-table-desktop.jpg);   
+    }
+}
+
+.landing {
+    @include translateY(-50%, 50%);
+    text-align: center;
+    width: 100%;
+    
+    &__content {
+        width: 80%;
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    &__enter {
+        color: $gold;
+        font-family: $fontBookman;
+        text-decoration: none;
+        position: relative;
+        top: 2em;
+        font-size: 1.75em;
+        border-bottom: 2px solid transparent;
+        
+        &:hover, &:focus {
+            color: $oliveLight;
+            text-decoration: none;
+            border-bottom: 2px solid $oliveLight;
+        }
+    }
+    
+    &__logo-process {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        width: auto;
+    }
+}

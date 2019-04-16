@@ -1,0 +1,232 @@
+/**
+ * @author zhixin wen <wenzhixin2010@gmail.com>
+ */
+
+.ms-parent {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    transition: all .3s ease;
+    
+    
+    @media only screen and (min-width: $bp-desktop) {
+        width: 1000px !important;
+    }
+    
+    &.fixed-filter {
+        position: fixed;
+        left: 5%;
+        right: 5%;
+        top: 5px;
+        width: auto !important;
+        z-index: 20;
+        
+        @media only screen and (min-width: $bp-mobile) {
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: $bp-tablet) {
+            left: calc((50vw - 500px) + 5%);
+            right: calc((50vw - 500px) + 5%);
+        }
+        @media only screen and (min-width: $bp-desktop) {
+            width: 1000px !important;
+            left: calc(50vw - 500px);
+            right: calc(50vw - 500px);
+        }
+    }
+}
+
+.ms-choice {
+    display: block;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 60px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid $grey;
+    text-align: left;
+    white-space: pre;
+    line-height: 60px;
+    color: $greyDark;
+    text-decoration: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    background-color: $white;
+    @include box-shadow(0px 2px 7px 1px rgba(0,0,0,0.25));
+    transition: all .3s ease;
+}
+
+.ms-choice:focus {
+    outline: 0;
+}
+
+.ms-choice.disabled {
+    background-color: #f4f4f4;
+    background-image: none;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.ms-choice > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 0 20px;
+}
+
+.ms-choice > span.placeholder {
+    color: $grey;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+}
+
+.ms-choice > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    font-family: $fontFontAwesome;
+    color: $grey;
+    text-align: center;
+    font-size: 21px;
+    
+    &:after {
+        content: "\f107";
+    }
+    
+    &.open {
+        &:after {
+            content: "\f106";
+            color: $greyDark;
+        }
+    }
+}
+
+.ms-choice:hover > span.placeholder,
+.ms-choice:hover > div {
+    color: $greyDark;
+}
+
+.ms-drop {
+    width: calc(100% + 2px);
+    overflow: hidden;
+    display: none;
+    margin-left: -1px;
+    margin-top: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    background: $white;
+    color: $greyDark;
+    border: 1px solid $grey;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.ms-drop.bottom {
+    top: 100%;
+    @include box-shadow(0px 2px 5px 1px rgba(0,0,0,0.25));
+}
+
+.ms-drop.top {
+    bottom: 100%;
+    @include box-shadow(0px 2px 5px 1px rgba(0,0,0,0.25));
+}
+
+.ms-search {
+    display: inline-block;
+    margin: 0;
+    min-height: 32px;
+    padding: .5em 1em;
+    position: relative;
+    width: 100%;
+    z-index: 10000;
+}
+
+.ms-search input {
+    width: 100%;
+    height: auto !important;
+    min-height: 32px;
+    padding: 0 10px;
+    margin: 0;
+    outline: 0;
+    font-family: $fontVerdana;
+    font-size: 16px;
+    color: $greyDark;
+    border: 1px solid $grey;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    @include box-shadow(none);
+}
+
+.ms-search, .ms-search input {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ms-drop ul {
+    overflow: auto;
+    margin: 0;
+    padding: 1em;
+}
+
+.ms-drop ul > li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    position: static;
+    line-height: 1.1;
+    padding: 10px 0;
+}
+
+.ms-drop ul > li .disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+}
+
+.ms-drop ul > li.multiple {
+    display: block;
+    float: left;
+}
+
+.ms-drop ul > li.group {
+    clear: both;
+}
+
+.ms-drop ul > li.multiple label {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ms-drop ul > li label {
+    font-weight: normal;
+    display: block;
+}
+
+.ms-drop ul > li label.optgroup {
+    font-weight: bold;
+}
+
+.ms-drop input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.ms-drop .ms-no-results {
+    display: none;
+}

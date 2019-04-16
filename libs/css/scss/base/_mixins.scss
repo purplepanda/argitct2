@@ -1,0 +1,22 @@
+@mixin box-sizing($param) {
+    -moz-box-sizing: $param;
+    -ms-box-sizing: $param;
+    -webkit-box-sizing: $param;
+    box-sizing: $param;
+}
+
+@mixin translateY($translateY, $top: 50%) {
+    position: absolute;
+    top: $top;
+    -webkit-transform: perspective(1px) translateY($translateY);
+    -moz-transform: perspective(1px) translateY($translateY);
+    -ms-transform: perspective(1px) translateY($translateY);
+    transform: perspective(1px) translateY($translateY);
+}
+
+@mixin box-shadow($boxShadow) {
+    -webkit-box-shadow: $boxShadow;
+    -moz-box-shadow:    $boxShadow;
+    -ms-box-shadow:     $boxShadow;
+    box-shadow:         $boxShadow;
+}
