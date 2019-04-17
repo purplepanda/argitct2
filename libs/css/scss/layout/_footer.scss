@@ -1,0 +1,61 @@
+.footer {
+    position: relative;
+    margin: 0 10%;
+    padding: 30px 0;
+    font-family: $fontBookman;
+    font-size: 10px;
+    text-align: center;
+    color: $grey;
+    border-top: 1px solid $grey;
+    
+    @media only screen and (min-width: $bp-xsmall) {
+        margin: 0 5%;    
+    }
+
+    &__content {
+        &-tm {
+            @media only screen and (min-width: $bp-mobile) {
+                margin: 0;   
+            }
+        }
+        &-copy {
+            display: inline-block;
+            margin: 0 10px;
+            
+            @media only screen and (min-width: $bp-mobile) {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 30px;
+            }
+        }
+        &-social {
+            display: inline-block;
+            margin: 0 10px;
+            
+            @media only screen and (min-width: $bp-mobile) {
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+            }
+            li {
+                line-height: normal;
+            }
+            a {
+                font-family: $fontFontAwesome;
+                font-size: 3em;
+                color: $grey;
+                text-decoration: none;
+                
+                &:before {
+                    content: "\f08c";
+                }
+                
+                &:hover, &:focus {
+                    color: $pumpkin;
+                }
+            }
+        }
+    }
+}
