@@ -6,8 +6,8 @@
   z-index: 25;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgb(0,0,0);
-  background-color: $white80;
+  background-color: $olive25;
+    
   text-align: center;
 }
 .blocker:before{
@@ -28,7 +28,7 @@
   max-width: 700px;
   box-sizing: border-box;
   width: 100%;
-  background: $white;
+  background: $cream;
   padding: 2em;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -40,7 +40,7 @@
 }
 
 .modal a.close-modal {
-  font-family: $fontVerdana;
+  font-family: $fontLucida;
   position: absolute;
   top: 0;
   right: 0;
@@ -48,14 +48,15 @@
   width: 30px;
   height: 30px;
   font-size: 25px;
-  color: $grey;
+  color: $pumpkin;
   text-align: center;
   line-height: 1.1;
   border-radius: 50%;
+  text-decoration: none;
   transition: all .3s ease;
     
   &:hover, &:focus {
-    color: $greyDark;
+    color: $purple;
   }
 }
 

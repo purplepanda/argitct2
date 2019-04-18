@@ -13,14 +13,18 @@
     <body>
         <header>
             <nav class="nav">
-                <div class="nav__logo">
-                    <img src="/libs/img/logos/logo-02.png" alt="ARGitct, LLC Project Strategy | Management | Execution" />
+                <div class="nav__header">
+                    <a href="" class="menu-toggle" id="menuLink">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </a>
+                    <div class="nav__logo">
+                        <img src="/libs/img/logos/logo-02.png" alt="ARGitct, LLC Project Strategy | Management | Execution" class="hide-mobile"/>
+                        <img src="/libs/img/logos/logo-mobile.png" alt="ARGitct, LLC Project Strategy | Management | Execution" class="hide-desktop"/>
+                    </div>
                 </div>
-                <a href="" class="menu-toggle" id="menuLink">
-                    <span class="menu-icon"></span>
-                    <span class="menu-icon"></span>
-                    <span class="menu-icon"></span>
-                </a>
+
                 <ul class="nav__list" aria-labelledby="menuLink">
                     <li class="nav__list-item">
                         <a href="/services.html" class="nav__list-link">services</a>
@@ -31,7 +35,7 @@
                     <li class="nav__list-item">
                         <a href="/process.html" class="nav__list-link">process</a>
                     </li>
-                    <li class="nav__list-item">
+                    <li class="nav__list-item active">
                         <a href="/team.html" class="nav__list-link active">team</a>
                     </li>
                     <li class="nav__list-item">
@@ -72,41 +76,47 @@
                     <li>Vendors + Suppliers</li>
                     <li>Videographers, Photographers, and Documentary Professionals</li>
                 </ul>
-                <p>Click <a href="#">here</a> for some Project Resources and Professional Partners</p>
-                <p>Project Resources and Professional Partners include:</p>
-                <ul>
-                    <li>AIA Contracts <a href="https://www.aiacontracts.org" target="_blank">https://www.aiacontracts.org</a></li>
-                    <li>Alnwick Project Delivery <a href="https://www.alnwickprojectdelivery.net" target="_blank">https://www.alnwickprojectdelivery.net</a></li>
-                    <li>AGA Public Realm Strategists <a href="http://www.alexgarvin.net" target="_blank">http://www.alexgarvin.net</a></li>
-                    <li>Barba Consulting <a href="http://barbaconsulting.com" target="_blank">http://barbaconsulting.com</a></li>
-                    <li>Bastian Law Offices <a href="http://bastianlawoffices.com" target="_blank">http://bastianlawoffices.com</a></li>
-                    <li>Benjamin Law PC Copyright + Trademark <a href="http://www.benjaminlawpc.com" target="_blank">http://www.benjaminlawpc.com</a></li>
-                    <li>Capalino + Company Government Relations <a href="https://www.capalino.com" target="_blank">https://www.capalino.com</a></li>
-                    <li>COAA Construction Owners Association of America <a href="https://coaa.org" target="_blank">https://coaa.org</a></li>
-                    <li>CODE, LLC Building Code + Zoning Consultants <a href="http://www.codenyc.com" target="_blank">http://www.codenyc.com</a></li>
-                    <li>Chris Tumulty</li>
-                    <li>CNY Group <a href="http://www.cnygroup.com" target="_blank">http://www.cnygroup.com</a></li>
-                    <li>CohnReznick Restructuring + Insolvency <a href="https://www.cohnreznick.com/services/advisory" target="_blank">https://www.cohnreznick.com/services/advisory</a></li>
-                    <li>Compass Real Estate / Christine Toes</li>
-                    <li>CowBay Contracting <a href="http://www.cowbaycontracting.com" target="_blank">http://www.cowbaycontracting.com</a></li>
-                    <li>Douglas Elliman / Sarah Burke</li>
-                    <li>Empire City Construction Corp <a href="http://empirecitynyc.com/wordpress1" target="_blank">http://empirecitynyc.com/wordpress1</a></li>
-                    <li>Halliwell Mediaworks <a href="https://www.halliwellmediaworks.com" target="_blank">https://www.halliwellmediaworks.com</a></li>
-                    <li>Hudson Greencraft Construction <a href="https://hgcraft.com/home" target="_blank">https://hgcraft.com/home</a></li>
-                    <li>Jack Jaffa + Associates Real Estate Consultants <a href="https://www.jackjaffa.com" target="_blank">https://www.jackjaffa.com</a></li>
-                    <li>JAC Studio Interior Design <a href="http://jacstudionyc.com" target="_blank">http://jacstudionyc.com</a></li>
-                    <li>Jessica Judson Rose Interior Design</li>
-                    <li>JMD Realty</li>
-                    <li>KM Associates of NY <a href="https://kmaofny.com" target="_blank">https://kmaofny.com</a></li>
-                    <li>Philips Nizer, LLP <a href="https://www.phillipsnizer.com" target="_blank">https://www.phillipsnizer.com</a></li>
-                    <li>PMI Project Management Institute <a href="https://www.pmi.org" target="_blank">https://www.pmi.org</a></li>
-                    <li>Sciame Construction, LLC <a href="https://www.sciame.com" target="_blank">https://www.sciame.com</a></li>
-                    <li>Shawmut Design + Construction <a href="https://www.shawmut.com" target="_blank">https://www.shawmut.com</a></li>
-                    <li>Shulte Roth Zabel, LLP <a href="https://www.srz.com" target="_blank">https://www.srz.com</a></li>
-                    <li>Steven Morris Videography + Photography <a href="http://www.stevenmorris.com" target="_blank">http://www.stevenmorris.com</a></li>
-                    <li>Whitham + Cook, PC Intellectual Property Attorneys <a href="http://www.wcc-ip.com" target="_blank">http://www.wcc-ip.com</a></li>
-                    <li>zeroLUX Lighting Design <a href="https://zerolux.com" target="_blank">https://zerolux.com</a></li>
-                </ul>
+                <p>Click <a href="/resources.html">here</a> for some Project Resources and Professional Partners</p>
+                <p>Click <a href="#partners" rel="modal:open">here</a> for some Project Resources and Professional Partners</p>
+                
+                <div id="partners" class="modal">
+                    <div class="modal__content">
+                        <h1>Project Resources and Professional Partners include:</h1>
+                        <ul>
+                            <li>AIA Contracts <a href="https://www.aiacontracts.org" target="_blank">https://www.aiacontracts.org</a></li>
+                            <li>Alnwick Project Delivery <a href="https://www.alnwickprojectdelivery.net" target="_blank">https://www.alnwickprojectdelivery.net</a></li>
+                            <li>AGA Public Realm Strategists <a href="http://www.alexgarvin.net" target="_blank">http://www.alexgarvin.net</a></li>
+                            <li>Barba Consulting <a href="http://barbaconsulting.com" target="_blank">http://barbaconsulting.com</a></li>
+                            <li>Bastian Law Offices <a href="http://bastianlawoffices.com" target="_blank">http://bastianlawoffices.com</a></li>
+                            <li>Benjamin Law PC Copyright + Trademark <a href="http://www.benjaminlawpc.com" target="_blank">http://www.benjaminlawpc.com</a></li>
+                            <li>Capalino + Company Government Relations <a href="https://www.capalino.com" target="_blank">https://www.capalino.com</a></li>
+                            <li>COAA Construction Owners Association of America <a href="https://coaa.org" target="_blank">https://coaa.org</a></li>
+                            <li>CODE, LLC Building Code + Zoning Consultants <a href="http://www.codenyc.com" target="_blank">http://www.codenyc.com</a></li>
+                            <li>Chris Tumulty</li>
+                            <li>CNY Group <a href="http://www.cnygroup.com" target="_blank">http://www.cnygroup.com</a></li>
+                            <li>CohnReznick Restructuring + Insolvency <a href="https://www.cohnreznick.com/services/advisory" target="_blank">https://www.cohnreznick.com/services/advisory</a></li>
+                            <li>Compass Real Estate / Christine Toes</li>
+                            <li>CowBay Contracting <a href="http://www.cowbaycontracting.com" target="_blank">http://www.cowbaycontracting.com</a></li>
+                            <li>Douglas Elliman / Sarah Burke</li>
+                            <li>Empire City Construction Corp <a href="http://empirecitynyc.com/wordpress1" target="_blank">http://empirecitynyc.com/wordpress1</a></li>
+                            <li>Halliwell Mediaworks <a href="https://www.halliwellmediaworks.com" target="_blank">https://www.halliwellmediaworks.com</a></li>
+                            <li>Hudson Greencraft Construction <a href="https://hgcraft.com/home" target="_blank">https://hgcraft.com/home</a></li>
+                            <li>Jack Jaffa + Associates Real Estate Consultants <a href="https://www.jackjaffa.com" target="_blank">https://www.jackjaffa.com</a></li>
+                            <li>JAC Studio Interior Design <a href="http://jacstudionyc.com" target="_blank">http://jacstudionyc.com</a></li>
+                            <li>Jessica Judson Rose Interior Design</li>
+                            <li>JMD Realty</li>
+                            <li>KM Associates of NY <a href="https://kmaofny.com" target="_blank">https://kmaofny.com</a></li>
+                            <li>Philips Nizer, LLP <a href="https://www.phillipsnizer.com" target="_blank">https://www.phillipsnizer.com</a></li>
+                            <li>PMI Project Management Institute <a href="https://www.pmi.org" target="_blank">https://www.pmi.org</a></li>
+                            <li>Sciame Construction, LLC <a href="https://www.sciame.com" target="_blank">https://www.sciame.com</a></li>
+                            <li>Shawmut Design + Construction <a href="https://www.shawmut.com" target="_blank">https://www.shawmut.com</a></li>
+                            <li>Shulte Roth Zabel, LLP <a href="https://www.srz.com" target="_blank">https://www.srz.com</a></li>
+                            <li>Steven Morris Videography + Photography <a href="http://www.stevenmorris.com" target="_blank">http://www.stevenmorris.com</a></li>
+                            <li>Whitham + Cook, PC Intellectual Property Attorneys <a href="http://www.wcc-ip.com" target="_blank">http://www.wcc-ip.com</a></li>
+                            <li>zeroLUX Lighting Design <a href="https://zerolux.com" target="_blank">https://zerolux.com</a></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
 
