@@ -16,9 +16,15 @@
     }
 }
 
+@include font-face-simple('Lato-Light', 'fonts/Lato/Lato-Light.ttf');
+@include font-face-simple('Lato-Regular', 'fonts/Lato/Lato-Regular.ttf');
+@include font-face-simple('OpenSans-Regular', 'fonts/OpenSans/OpenSans-Regular.ttf');
 @include font-face(FontAwesome, 'fonts/FontAwesome/FontAwesome');
 
 $fontFontAwesome: "FontAwesome";
 $fontBookman: "Bookman Old Style", Bookman, serif;
 $fontLucida: Lucida Sans Unicode;
 $fontVerdana: Verdana, Geneva, sans-serif;
+$fontLatoLight: "Lato-Light", Helvetica, Arial, sans-serif;
+$fontLatoRegular: "Lato-Regular", Helvetica, Arial, sans-serif;
+$fontOpenSans: "OpenSans-Regular", Helvetica, Arial, sans-serif;

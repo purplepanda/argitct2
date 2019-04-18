@@ -846,6 +846,18 @@ template {
     animation: fade-in9 10s cubic-bezier(0.15, 0.53, 0.7, 0.95) infinite; }
 
 @font-face {
+  font-family: "Lato-Light";
+  src: url("fonts/Lato/Lato-Light.ttf.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("fonts/Lato/Lato-Regular.ttf.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans/OpenSans-Regular.ttf.ttf") format("truetype"); }
+
+@font-face {
   font-family: FontAwesome;
   src: url("fonts/FontAwesome/FontAwesome.eot");
   src: url("fonts/FontAwesome/FontAwesome.eot?#iefix") format("embedded-opentype"), url("fonts/FontAwesome/FontAwesome.woff") format("woff"), url("fonts/FontAwesome/FontAwesome.ttf") format("truetype"), url("fonts/FontAwesome/FontAwesome.otf") format("opentype"); }
@@ -1227,6 +1239,18 @@ section.content .content__img-right {
   @media only screen and (min-width: 768px) {
     section.content .content__img-right {
       margin: 5px 0 50px 75px; } }
+
+.lucida {
+  font-family: Lucida Sans Unicode; }
+
+.verdana {
+  font-family: Verdana, Geneva, sans-serif; }
+
+.opensans {
+  font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif; }
+
+.lato {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
 
 .special {
   color: #B64C24;
