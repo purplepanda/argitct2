@@ -1152,7 +1152,8 @@ section.content .content__asset {
   padding: 0 !important; }
 
 .contact-info {
-  max-width: 240px; }
+  max-width: 240px;
+  margin: 0; }
   .contact-info .text-right {
     float: right; }
     .contact-info .text-right:nth-of-type(3) {
@@ -1226,6 +1227,7 @@ section.content .content__asset {
     height: 2.5em;
     padding: .25em .5em;
     font-size: 1em;
+    border-radius: 0;
     border: 1px solid rgba(74, 68, 42, 0.5);
     color: #715967;
     transition: all .3s ease; }
