@@ -72,9 +72,10 @@ img {
 h1, h2, h3 {
     font-size: 21px;
     font-family: $fontLatoBold;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     line-height: 1.4;
     @include font-smoothing();
+    font-weight: inherit;
 }
 
 h1 {
@@ -141,7 +142,20 @@ li {
 
 ul, ol {
     margin: 0 .5em 50px 1.5em;
-    list-style-type: square;
+    
+    li:not(.nav__list-item) {
+        position: relative;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: 12px;
+            left: -20px;
+            background-color: $greyDark;
+        }
+    }
 
     @media only screen and (min-width: $bp-xsmall) {
         margin: 0 1.5em 50px 3em;
