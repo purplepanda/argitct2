@@ -1,12 +1,12 @@
 .contact-info {
     max-width: 240px;
-    
+
     .text-right {
         float: right;
-        color: $pumpkin;
-        text-decoration: underline;
-        font-weight: bold;
-        
+        // color: $pumpkin;
+        // text-decoration: underline;
+        // font-weight: bold;
+
         &:nth-of-type(3) {
             letter-spacing: .09em;
         }

@@ -1,6 +1,6 @@
 html {
     @include box-sizing(border-box);
-    
+
     &.nav-open {
         overflow-y: hidden;
     }
@@ -14,21 +14,18 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
-    font-family: $fontLucida;
+    font-family: $fontVerdana;
     font-size: 1em;
     color: $greyDark;
     background-color: $cream;
-    overflow-y: auto;
-    -webkit-font-smoothing: antialiased;
-    -webkit-perspective: 0px !important;
-    -webkit-backface-visibility: visible !important;
-    -moz-osx-font-smoothing: grayscale;
-    
-    &.nav-open, &.modal-open {
-        overflow-y: hidden;
+
+    &.nav-open {
+         overflow-y: hidden;
     }
 }
 
@@ -41,14 +38,14 @@ header {
 
     @media only screen and (min-width: $bp-mobile) {
         position: relative;
-    }  
+    }
 }
 
 main {
     position: relative;
     z-index: 1;
     top: 50px;
-    left: 0;
+    right: 0;
     min-height: calc(100vh - 335px);
     background-color: $cream;
     transition: all .3s ease;
@@ -60,10 +57,10 @@ main {
         top: auto;
         min-height: calc(100vh - 250px);
     }
-    
+
     .nav-open & {
-        left: 50vw;
-    }   
+        right: 50vw;
+    }
 }
 
 img {
@@ -74,8 +71,10 @@ img {
 
 h1, h2, h3 {
     font-size: 21px;
-    font-family: $fontBookman;
-    font-weight: bold;
+    font-family: $fontLatoBold;
+    letter-spacing: .1em;
+    line-height: 1.4;
+    @include font-smoothing();
 }
 
 h1 {
@@ -94,11 +93,13 @@ h4 {
     font-size: 14px;
     margin: 0 0 10px;
     letter-spacing: 0.03em;
+    @include font-smoothing();
 }
 
 h5,
 h6 {
     margin: 0 0 20px;
+    @include font-smoothing();
 }
 
 h5 {
@@ -114,6 +115,7 @@ li {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    @include font-smoothing();
 }
 
 p {
@@ -121,11 +123,13 @@ p {
 }
 
 a {
+    font-family: $fontLatoBold;
+    font-size: 14.5px;
     transition: all .3s ease;
     color: $pumpkin;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.1em;
+    @include font-smoothing();
+
     &:hover, &:focus {
         color: $purple;
     }
@@ -138,18 +142,21 @@ li {
 ul, ol {
     margin: 0 .5em 50px 1.5em;
     list-style-type: square;
-    
+
     @media only screen and (min-width: $bp-xsmall) {
         margin: 0 1.5em 50px 3em;
-    }   
+    }
 }
 
-button,
 input,
 optgroup,
 select,
 textarea {
     font-family: $fontVerdana;
+}
+
+fieldset {
+    padding: 0;
 }
 
 section:not(.masthead) {
@@ -160,10 +167,10 @@ section.content {
     .content__img-right {
         width: 100%;
         padding: 20px 10%;
-        
+
         @media only screen and (min-width: $bp-xsmall) {
             display: inline-block;
-            float: right; 
+            float: right;
             width: 150px;
             margin: 5px 0 50px 50px;
             padding: 0;
@@ -172,25 +179,26 @@ section.content {
             margin: 5px 0 50px 75px;
         }
     }
-}
-
-.lucida {
-    font-family: $fontLucida;
-}
-.verdana {
-    font-family: $fontVerdana; 
-}
-.opensans {
-    font-family: $fontOpenSans; 
-}
-.lato {
-    font-family: $fontLatoRegular 
+    
+    .content__asset {
+        text-align: center;
+        width: 80%;
+        max-width: 550px;
+        margin: auto;
+    }
 }
 
 .special {
+    font-family: $fontLatoBold;
+    letter-spacing: .1em;
     color: $pumpkin;
     text-decoration: underline;
-    font-weight: bold;
+}
+
+.special2 {
+    font-family: $fontLatoBold;
+    letter-spacing: .1em;
+    color: $pumpkin;
 }
 
 //icons
@@ -242,19 +250,35 @@ section.content {
   display: none !important;
 }
 
+.show-xsmall {
+    display: block;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        display: none;
+    }
+}
+
+.hide-xsmall {
+    display: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        display: block;
+    }
+}
+
 .hide-mobile {
     display: none;
-    
+
     @media only screen and (min-width: $bp-mobile) {
-        display: block;  
+        display: block;
     }
 }
 
 .hide-desktop {
     display: block;
-    
+
     @media only screen and (min-width: $bp-mobile) {
-        display: none;  
+        display: none;
     }
 }
 

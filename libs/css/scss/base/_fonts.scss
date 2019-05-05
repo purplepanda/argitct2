@@ -5,8 +5,8 @@
         src: url('#{$file}.eot');
         src: url('#{$file}.eot?#iefix') format('embedded-opentype'),
              url('#{$file}.woff') format('woff'),
-             url('#{$file}.ttf') format('truetype'),
-             url('#{$file}.otf') format('opentype');
+             url('#{$file}.woff2') format('woff2'),
+             url('#{$file}.ttf') format('truetype');
     }
 }
 @mixin font-face-simple($family, $file) {
@@ -16,10 +16,13 @@
     }
 }
 
-@include font-face-simple('Lato-Light', 'fonts/Lato/Lato-Light.ttf');
-@include font-face-simple('Lato-Regular', 'fonts/Lato/Lato-Regular.ttf');
-@include font-face-simple('OpenSans-Regular', 'fonts/OpenSans/OpenSans-Regular.ttf');
+
 @include font-face(FontAwesome, 'fonts/FontAwesome/FontAwesome');
+@include font-face('Lato-Light', 'fonts/Lato/Lato-Light');
+@include font-face('Lato-Regular', 'fonts/Lato/Lato-Regular');
+@include font-face('Lato-Medium', 'fonts/Lato/Lato-Medium');
+@include font-face('Lato-Semibold', 'fonts/Lato/Lato-Semibold');
+@include font-face('Lato-Bold', 'fonts/Lato/Lato-Bold');
 
 $fontFontAwesome: "FontAwesome";
 $fontBookman: "Bookman Old Style", Bookman, serif;
@@ -27,4 +30,6 @@ $fontLucida: Lucida Sans Unicode;
 $fontVerdana: Verdana, Geneva, sans-serif;
 $fontLatoLight: "Lato-Light", Helvetica, Arial, sans-serif;
 $fontLatoRegular: "Lato-Regular", Helvetica, Arial, sans-serif;
-$fontOpenSans: "OpenSans-Regular", Helvetica, Arial, sans-serif;
+$fontLatoMedium: "Lato-Medium", Helvetica, Arial, sans-serif;
+$fontLatoSemibold: "Lato-Semibold", Helvetica, Arial, sans-serif;
+$fontLatoBold: "Lato-Bold", Helvetica, Arial, sans-serif;

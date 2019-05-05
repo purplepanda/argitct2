@@ -27,3 +27,10 @@
     -ms-box-shadow:     $boxShadow;
     box-shadow:         $boxShadow;
 }
+
+@mixin font-smoothing() {
+    -webkit-font-smoothing: antialiased;
+    -webkit-perspective: 0px !important;
+    -webkit-backface-visibility: visible !important;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -5,7 +5,7 @@
         height: 80px;
         @include box-shadow(inset 0 -1px 0 rgba(17,17,17,0.1));
     }
-    
+
     &__header {
         position: fixed;
         left: 0;
@@ -16,7 +16,7 @@
         background-color: $cream;
         transition: all .3s ease;
         @include box-shadow(inset 0 -1px 0 rgba(17,17,17,0.1));
-        
+
         @media only screen and (min-width: $bp-mobile) {
             position: relative;
             left: 5%;
@@ -26,21 +26,24 @@
         }
 
         &.open {
-            left: 50vw;
-            
+            right: 50vw;
+
             .nav__logo {
-                left: calc(100% - 50px);
+                left: -25vw;
+
+                @media only screen and (min-width: 550px) {
+                    left: 5%;
+                }
             }
         }
     }
-    
+
     &__logo {
         height: 50px;
         position: relative;
-        left: calc(50% - 50px);
+        left: 5%;
         transition: all .3s ease;
-        @include transform(perspective(1px) translateX(-50%));
-        
+
         @media only screen and (min-width: $bp-mobile) {
             position: relative;
             left: auto;
@@ -49,7 +52,7 @@
             @include box-shadow(none);
             @include transform(none);
         }
-        
+
         img {
             height: 40px;
             width: auto;
@@ -60,6 +63,10 @@
                 margin: 15px auto;
             }
         }
+
+        a:focus {
+            outline: 1px dotted $purple;
+        }
     }
 
     .menu-toggle {
@@ -69,7 +76,8 @@
         flex-direction: column;
         justify-content: center;
         border-bottom: 0;
-        position: relative;
+        position: absolute;
+        right: 5%;
 
         @media only screen and (min-width: $bp-mobile) {
             display: none;
@@ -84,7 +92,7 @@
         }
 
         &.open {
-            left: 10px;
+            right: 10px;
 
             .menu-icon {
                 width: 35px;
@@ -101,10 +109,10 @@
             }
         }
     }
-    
+
     &__list {
         position: fixed;
-        left: -100vw;
+        right: -100vw;
         top: 0;
         width: 50vw;
         height: 100%;
@@ -113,11 +121,11 @@
         background-color: $greyDark;
         opacity: 0;
         list-style-type: none;
-        transition: left .3s ease;
-        
+        transition: right .3s ease;
+
         @media only screen and (min-width: $bp-mobile) {
             position: relative;
-            left: auto;
+            right: auto;
             top: auto;
             width: 100%;
             max-width: 650px;
@@ -131,46 +139,44 @@
             right: 5%;
             padding-left: 15%;
         }
-        
+
         &.open {
             opacity: 1;
-            left: 0;
+            right: 0;
         }
-        
+
         &-item {
             padding: 11px 25px;
-            
+
             @media only screen and (min-width: $bp-mobile) {
                 padding: 0;
             }
-            
+
             &.active {
                 background-color: $cream;
             }
         }
-        
+
         &-link {
-            font-family: $fontLucida;
+            font-family: $fontLatoBold;
             color: $cream;
             border-bottom: 2px solid transparent;
-            font-size: 14px;
             text-decoration: none;
-            font-weight: normal;
-            
+
             @media only screen and (min-width: $bp-mobile) {
                 color: $greyDark;
             }
-            
+
             &.active {
                 color: $pumpkin;
                 border-bottom: 2px solid $pumpkin;
             }
-            
+
             &:hover, &:focus {
                 color: $purple;
                 border-bottom: 2px solid $purple;
                 outline: 0;
-                
+
                 @media only screen and (min-width: $bp-mobile) {
                     color: $pumpkin;
                     border-bottom: 2px solid $pumpkin;

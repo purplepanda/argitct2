@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>ARGitct contact</title>
+    <title>ARGitct Contact</title>
 
     <link rel="stylesheet" type='text/css' href="libs/app.css">
     </head>
@@ -14,15 +14,14 @@
         <header>
             <nav class="nav">
                 <div class="nav__header">
+                    <div class="nav__logo">
+                        <a href="/index.html"><img src="/libs/img/logos/logo-02.png" alt="ARGitct, LLC Project Strategy | Management | Execution"/></a>
+                    </div>
                     <a href="" class="menu-toggle" id="menuLink">
                         <span class="menu-icon"></span>
                         <span class="menu-icon"></span>
                         <span class="menu-icon"></span>
                     </a>
-                    <div class="nav__logo">
-                        <img src="/libs/img/logos/logo-02.png" alt="ARGitct, LLC Project Strategy | Management | Execution" class="hide-mobile"/>
-                        <img src="/libs/img/logos/logo-mobile.png" alt="ARGitct, LLC Project Strategy | Management | Execution" class="hide-desktop"/>
-                    </div>
                 </div>
 
                 <ul class="nav__list" aria-labelledby="menuLink">
@@ -57,14 +56,63 @@
                 <h2>Great collaborations start with a conversation.</h2>
                 <p class="contact-info">ARGitct, LLC<br>
                     Anne R. Goulet, Principal<br>
-                    Office: <span class="text-right">+1 (212) 472-8159</span><br>
-                    Mobile: <span class="text-right">+1 (917) 626-8093</span><br>
-                    Email: <span class="text-right">info@ARGitct.com</span></p>
+                    Office: <span class="text-right special">+1 (212) 472-8159</span><br>
+                    Mobile: <span class="text-right special">+1 (917) 626-8093</span><br>
+                    Email: <span class="text-right special"><a href="mailto:info@ARGitct.com">info@ARGitct.com</a></span></p>
                 <p>ARGitct, LLC is based in New York, NY, USA.<br>Our clients and projects are located worldwide.</p>
-                <p><br>Already a client?<br>Click <a href="/under-construction.html">here.</a></p>
-                <p>Interested in our posts and publications?<br>Click <a href="/under-construction.html">here.</a></p>
+                <p><br>Already a client?<br>Click <a href="#client-login" rel="modal:open">here.</a></p>
+                <p>Interested in our posts and publications?<br>Click <a href="#publications" rel="modal:open">here.</a></p>
             </section>
         </main>
+        <div id="client-login" class="modal">
+            <div class="modal__content">
+                <div class="modal__content--text">
+                    <div id="loginForm" class="form">
+                        <fieldset>
+                            <h2 class="form__title">Client Login</h2>
+                            <div class="form__group">
+                                <label for="username" class="form__label">Username:</label>
+                                <input type="email"
+                                    name="username"
+                                    class="form__input username"
+                                    tabindex="1"
+                                    maxlength="100"
+                                    required>
+                            </div>
+                            <div class="form__group">
+                                <label for="password" class="form__label">Password:</label>
+                                <input type="password"
+                                    name="password"
+                                    class="form__input password"
+                                    tabindex="1"
+                                    maxlength="30"
+                                    required>
+                            </div>
+                            <div class="form__group">
+                                <p class="form__error"></p>
+                            </div>
+                            <div class="form__group btn-submit">
+                                <button class="form__input">ENTER</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+        <div id="publications" class="modal">
+            <div class="modal__content">
+                <div class="modal__content--text">
+                    <h1>Publications</h1>
+                    <ul>
+                        <li>Nunc lobortis mattis aliquam faucibus purus in massa.</li>
+                        <li>Tempor orci dapibus ultrices in iaculis nunc sed.</li>
+                        <li>Tristique senectus et netus et malesuada fames.</li>
+                        <li>Fringilla ut morbi tincidunt augue interdum. </li>
+                        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
 
         <footer class="footer">
             <div class="footer__content">
