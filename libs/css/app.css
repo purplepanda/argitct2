@@ -978,7 +978,7 @@ h1 {
   margin: 0 0 10px; }
 
 h2 {
-  margin: 0 0 50px; }
+  margin: 0 0 25px; }
 
 h3 {
   margin: 0 0 7px; }
@@ -1314,7 +1314,7 @@ section.content .content__asset {
     max-width: 700px;
     margin: auto; }
   .landing__enter {
-    color: #8E8648;
+    color: #1B1B19;
     font-family: "Bookman Old Style", Bookman, serif;
     text-decoration: none;
     position: relative;
@@ -1323,7 +1323,7 @@ section.content .content__asset {
     border-bottom: 0;
     font-weight: bold; }
     .landing__enter:hover, .landing__enter:focus {
-      color: #1B1B19;
+      color: #715967;
       text-decoration: none;
       border-bottom: 0; }
   .landing__logo-process {
@@ -1359,12 +1359,16 @@ section.content .content__asset {
     #process .masthead {
       background-image: url(../../../../libs/img/mastheads/client-advocacy.jpg); } }
 
-#resources .masthead,
 #team .masthead {
+  background-image: url(../../../../libs/img/mastheads/team-m.jpg); }
+  @media only screen and (min-width: 768px) {
+    #team .masthead {
+      background-image: url(../../../../libs/img/mastheads/team.jpg); } }
+
+#resources .masthead {
   background-image: url(../../../../libs/img/mastheads/PLACEHOLDER-m.jpg); }
   @media only screen and (min-width: 768px) {
-    #resources .masthead,
-    #team .masthead {
+    #resources .masthead {
       background-image: url(../../../../libs/img/mastheads/PLACEHOLDER.jpg); } }
 
 #bio .masthead {

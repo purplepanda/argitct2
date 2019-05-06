@@ -26,7 +26,7 @@
     }
     
     &__enter {
-        color: $gold;
+        color: $greyDark;
         font-family: $fontBookman;
         text-decoration: none;
         position: relative;
@@ -36,7 +36,7 @@
         font-weight: bold;
         
         &:hover, &:focus {
-            color: $greyDark;
+            color: $purple;
             text-decoration: none;
             border-bottom: 0;
         }
