@@ -32,12 +32,13 @@
         position: relative;
         top: 2em;
         font-size: 1.75em;
-        border-bottom: 2px solid transparent;
+        border-bottom: 0;
+        font-weight: bold;
         
         &:hover, &:focus {
-            color: $oliveLight;
+            color: $greyDark;
             text-decoration: none;
-            border-bottom: 2px solid $oliveLight;
+            border-bottom: 0;
         }
     }
     

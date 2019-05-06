@@ -534,58 +534,94 @@ template {
     opacity: 1; } }
 
 .anim-fade-in {
-  opacity: 0;
-  -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
-  -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
-  animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in {
+      opacity: 0;
+      -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
+      -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
+      animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards; } }
 
 .anim-fade-in-01 {
-  opacity: 0;
-  -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
-  -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
-  animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-01 {
+      opacity: 0;
+      -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
+      -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
+      animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s; } }
 
 .anim-fade-in-02 {
-  opacity: 0;
-  -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
-  -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
-  animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-02 {
+      opacity: 0;
+      -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
+      -moz-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
+      animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s; } }
 
 .anim-fade-in-03 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-03 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s; } }
 
 .anim-fade-in-04 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-04 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s; } }
 
 .anim-fade-in-05 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-05 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s; } }
 
 .anim-fade-in-06 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-06 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s; } }
 
 .anim-fade-in-07 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-07 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s; } }
 
 .anim-fade-in-08 {
-  opacity: 0;
-  -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
-  -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
-  animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s; }
+  opacity: 1;
+  animation: none; }
+  @media only screen and (min-width: 480px) {
+    .anim-fade-in-08 {
+      opacity: 0;
+      -webkit-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
+      -moz-animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
+      animation: fade-in 0.25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s; } }
 
 @font-face {
   font-family: FontAwesome;
@@ -657,7 +693,7 @@ template {
   box-sizing: border-box;
   width: 100%;
   background: #F0F1E9;
-  padding: 2em;
+  padding: 3em 2em 2em;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   -o-border-radius: 1px;
@@ -670,7 +706,7 @@ template {
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 479px) {
     .modal {
-      padding: 1.25em; }
+      padding: 2.5em 1.25em 1.25em; }
       .modal h1, .modal h2, .modal h3 {
         font-size: 17px; }
       .modal p, .modal li {
@@ -1000,7 +1036,7 @@ li {
   line-height: 2; }
 
 ul, ol {
-  margin: 0 .5em 50px 1.5em; }
+  margin: 0 .5em 25px 1.5em; }
   ul li:not(.nav__list-item), ol li:not(.nav__list-item) {
     position: relative; }
     ul li:not(.nav__list-item):before, ol li:not(.nav__list-item):before {
@@ -1013,7 +1049,7 @@ ul, ol {
       background-color: #1B1B19; }
   @media only screen and (min-width: 480px) {
     ul, ol {
-      margin: 0 1.5em 50px 3em; } }
+      margin: 0 1.5em 25px 3em; } }
 
 input,
 optgroup,
@@ -1152,12 +1188,10 @@ section.content .content__asset {
   padding: 0 !important; }
 
 .contact-info {
-  max-width: 240px;
+  max-width: 270px;
   margin: 0; }
   .contact-info .text-right {
     float: right; }
-    .contact-info .text-right:nth-of-type(3) {
-      letter-spacing: .09em; }
 
 .footer {
   position: relative;
@@ -1286,11 +1320,12 @@ section.content .content__asset {
     position: relative;
     top: 2em;
     font-size: 1.75em;
-    border-bottom: 2px solid transparent; }
+    border-bottom: 0;
+    font-weight: bold; }
     .landing__enter:hover, .landing__enter:focus {
-      color: #F1F2EA;
+      color: #1B1B19;
       text-decoration: none;
-      border-bottom: 2px solid #F1F2EA; }
+      border-bottom: 0; }
   .landing__logo-process {
     position: absolute;
     bottom: 25px;

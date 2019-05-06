@@ -1,12 +1,8 @@
 .contact-info {
-    max-width: 240px;
+    max-width: 270px;
     margin: 0;
 
     .text-right {
         float: right;
-
-        &:nth-of-type(3) {
-            letter-spacing: .09em;
-        }
     }
 }

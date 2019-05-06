@@ -13,65 +13,110 @@
 
 
 .anim-fade-in {
-    opacity: 0;
-    
-    -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
-    -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
-    animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
+        -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards;
+        animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards; 
+    }
 }
 .anim-fade-in-01 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
-    -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
-    animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
+        -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s;
+        animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 1s; 
+    }
 }
 .anim-fade-in-02 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
-    -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
-    animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
+        -moz-animation:    fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
+        animation:         fade-in 1s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 2s;
+    }
 }
 .anim-fade-in-03 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 3s;
+    }
 }
 .anim-fade-in-04 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 4s;
+    } 
 }
 .anim-fade-in-05 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 5s; 
+    }
 }
 .anim-fade-in-06 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 6s;
+    }
 }
 .anim-fade-in-07 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 7s;
+    } 
 }
 .anim-fade-in-08 {
-    opacity: 0;
-    
-    -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
-    -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
-    animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s; 
+    opacity: 1;
+    animation: none;
+
+    @media only screen and (min-width: $bp-xsmall) {
+        opacity: 0;
+
+        -webkit-animation: fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
+        -moz-animation:    fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
+        animation:         fade-in .25s cubic-bezier(0.15, 0.53, 0.7, 0.95) forwards 8s;
+    }
 }
