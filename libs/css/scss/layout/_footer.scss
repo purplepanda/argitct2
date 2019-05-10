@@ -13,7 +13,17 @@
     }
     
     p {
-        font-size: 10px;
+        font-size: 11px;
+        
+        a {
+            font-size: inherit;
+            color: inherit;
+            font-family: $fontBookman;
+            
+            &:hover, &:focus {
+                color: $pumpkin;
+            }
+        }
     }
 
     &__content {

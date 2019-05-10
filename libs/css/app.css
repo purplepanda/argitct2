@@ -1200,13 +1200,19 @@ section.content .content__asset {
   padding: 30px 0;
   font-family: "Bookman Old Style", Bookman, serif;
   text-align: center;
-  color: #B3B3B3;
-  border-top: 1px solid #B3B3B3; }
+  color: #ADADAD;
+  border-top: 1px solid #ADADAD; }
   @media only screen and (min-width: 480px) {
     .footer {
       margin: 25px 5% 0; } }
   .footer p {
-    font-size: 10px; }
+    font-size: 11px; }
+    .footer p a {
+      font-size: inherit;
+      color: inherit;
+      font-family: "Bookman Old Style", Bookman, serif; }
+      .footer p a:hover, .footer p a:focus {
+        color: #B64C24; }
   @media only screen and (min-width: 768px) {
     .footer__content-tm {
       margin: 0; } }
@@ -1236,7 +1242,7 @@ section.content .content__asset {
     .footer__content-social a {
       font-family: "FontAwesome";
       font-size: 2.75em;
-      color: #B3B3B3;
+      color: #ADADAD;
       text-decoration: none;
       border-bottom: 0; }
       .footer__content-social a:before {
@@ -1331,59 +1337,6 @@ section.content .content__asset {
     bottom: 25px;
     right: 25px;
     width: auto; }
-
-.masthead {
-  height: 14.5vw;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
-  @media only screen and (min-width: 768px) {
-    .masthead {
-      height: 11vw; } }
-
-#services .masthead {
-  background-image: url(../../../../libs/img/mastheads/laptop-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #services .masthead {
-      background-image: url(../../../../libs/img/mastheads/laptop.jpg); } }
-
-#projects .masthead {
-  background-image: url(../../../../libs/img/mastheads/PLACEHOLDER-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #projects .masthead {
-      background-image: url(../../../../libs/img/mastheads/PLACEHOLDER.jpg); } }
-
-#process .masthead {
-  background-image: url(../../../../libs/img/mastheads/client-advocacy-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #process .masthead {
-      background-image: url(../../../../libs/img/mastheads/client-advocacy.jpg); } }
-
-#team .masthead {
-  background-image: url(../../../../libs/img/mastheads/team-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #team .masthead {
-      background-image: url(../../../../libs/img/mastheads/team.jpg); } }
-
-#resources .masthead {
-  background-image: url(../../../../libs/img/mastheads/PLACEHOLDER-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #resources .masthead {
-      background-image: url(../../../../libs/img/mastheads/PLACEHOLDER.jpg); } }
-
-#bio .masthead {
-  background-image: url(../../../../libs/img/mastheads/dusseldorf-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #bio .masthead {
-      background-image: url(../../../../libs/img/mastheads/dusseldorf.jpg); } }
-
-#construction .masthead,
-#contact .masthead {
-  background-image: url(../../../../libs/img/mastheads/materials-palette-m.jpg); }
-  @media only screen and (min-width: 768px) {
-    #construction .masthead,
-    #contact .masthead {
-      background-image: url(../../../../libs/img/mastheads/materials-palette.jpg); } }
 
 .modal__content--image-and-text img {
   margin-bottom: 1.5em; }
