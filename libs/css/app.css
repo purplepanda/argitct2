@@ -987,6 +987,7 @@ h4 {
   font-size: 14px;
   margin: 0 0 10px;
   letter-spacing: 0.03em;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -webkit-perspective: 0px !important;
   -webkit-backface-visibility: visible !important;
@@ -1064,18 +1065,14 @@ section:not(.masthead) {
   padding: 1.5em 5%; }
 
 section.content .content__img-right {
-  width: 100%;
-  padding: 20px 10%; }
+  display: inline-block;
+  float: right;
+  width: 90px;
+  margin: 5px 0 25px 25px; }
   @media only screen and (min-width: 480px) {
     section.content .content__img-right {
-      display: inline-block;
-      float: right;
-      width: 150px;
-      margin: 5px 0 50px 50px;
-      padding: 0; } }
-  @media only screen and (min-width: 768px) {
-    section.content .content__img-right {
-      margin: 5px 0 50px 75px; } }
+      width: 125px;
+      margin: 5px 0 50px 50px; } }
 
 section.content .content__asset {
   text-align: center;
@@ -1337,6 +1334,9 @@ section.content .content__asset {
     bottom: 25px;
     right: 25px;
     width: auto; }
+  .landing__tagline {
+    position: relative;
+    top: 10em; }
 
 .modal__content--image-and-text img {
   margin-bottom: 1.5em; }
