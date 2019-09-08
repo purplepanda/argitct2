@@ -1348,6 +1348,9 @@ section.content .content__asset {
 .modal__content--text p:last-child {
   margin: 0; }
 
+.modal#project-list, .modal#bio-CV {
+  max-width: 900px; }
+
 @media only screen and (min-width: 768px) {
   .nav {
     display: flex;
