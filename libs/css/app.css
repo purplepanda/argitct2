@@ -1336,7 +1336,8 @@ section.content .content__asset {
     width: auto; }
   .landing__tagline {
     position: relative;
-    top: 10em; }
+    top: 10em;
+    color: #99983B; }
 
 .modal__content--image-and-text img {
   margin-bottom: 1.5em; }
