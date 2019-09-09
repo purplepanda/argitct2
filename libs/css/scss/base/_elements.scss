@@ -163,6 +163,14 @@ ul, ol {
     }
 }
 
+ol {
+    li:not(.nav__list-item) {  
+        &:before {
+            display: none;
+        }
+    }    
+}
+
 input,
 optgroup,
 select,
