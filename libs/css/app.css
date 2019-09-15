@@ -1155,6 +1155,10 @@ section.content .content__asset {
 .left-align {
   text-align: left; }
 
+.left-align-contact {
+  position: absolute;
+  left: calc(5% + 90px); }
+
 .right-align {
   text-align: right; }
 
