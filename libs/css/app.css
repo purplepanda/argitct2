@@ -1297,14 +1297,14 @@ section.content .content__asset {
   height: 100vh;
   min-height: 500px;
   width: 100%;
-  background-image: url(../../../../libs/img/crackle-table-mobile.jpg);
+  background-image: url(../../../../libs/img/bkgd-landing-mobile.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
   @media only screen and (min-width: 768px) {
     #landing {
-      background-image: url(../../../../libs/img/crackle-table-desktop.jpg); } }
+      background-image: url(../../../../libs/img/bkgd-landing.jpg); } }
 
 .landing {
   position: absolute;
