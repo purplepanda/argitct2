@@ -690,6 +690,7 @@ template {
   vertical-align: middle;
   position: relative;
   max-width: 700px;
+  max-height: 90vh;
   box-sizing: border-box;
   width: 100%;
   background: #F0F1E9;
@@ -1032,6 +1033,14 @@ a {
   -moz-osx-font-smoothing: grayscale; }
   a:hover, a:focus {
     color: #715967; }
+  a.link-external {
+    color: rgba(74, 68, 42, 0.5);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em; }
+    a.link-external:hover, a.link-external:focus {
+      color: #715967; }
 
 li {
   line-height: 2; }
@@ -1160,7 +1169,7 @@ section.content .content__asset {
   left: calc(5% + 90px); }
 
 .right-align {
-  text-align: right; }
+  float: right; }
 
 .center, .center-align {
   text-align: center; }
@@ -1355,6 +1364,9 @@ section.content .content__asset {
 .modal__content--text p:last-child {
   margin: 0; }
 
+.modal__content--text ul li {
+  margin-bottom: 1em; }
+
 .modal#project-list, .modal#bio-CV {
   max-width: 900px; }
 
@@ -1515,3 +1527,50 @@ section.content .content__asset {
         .nav__list-link:hover, .nav__list-link:focus {
           color: #B64C24;
           border-bottom: 2px solid #B64C24; } }
+
+.publications__link.active {
+  color: transparent; }
+
+.publications__content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(65, 68, 33, 0.25);
+  box-shadow: 0px 1px 5px 1px rgba(65, 68, 33, 0.25);
+  opacity: 0;
+  height: 0;
+  bottom: -50vh;
+  overflow: hidden;
+  transition: bottom .3s ease;
+  transition: all .3s ease; }
+  .publications__content.active {
+    padding: 3em 2em;
+    margin: 1.5em 1.5em 1.5em 0;
+    opacity: 1;
+    height: auto;
+    bottom: 0;
+    overflow: auto;
+    transition: bottom 1s ease; }
+  .publications__content h2 {
+    color: #B64C24;
+    text-align: center; }
+  .publications__content h6 {
+    margin: 0; }
+  .publications__content a {
+    font-family: "Lato-Bold", "Lato-Semibold", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    color: rgba(74, 68, 42, 0.5);
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all .3s ease; }
+    .publications__content a:hover, .publications__content a:focus {
+      color: #715967; }
+  .publications__content li {
+    margin-bottom: 1em; }

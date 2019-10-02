@@ -135,6 +135,18 @@ a {
     &:hover, &:focus {
         color: $purple;
     }
+    
+    &.link-external {
+        color: $olive25;
+        font-family: $fontVerdana;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        
+        &:hover, &:focus {
+            color: $purple;
+        }
+    }
 }
 
 li {
@@ -310,7 +322,7 @@ section.content {
     left: calc(5% + 90px);
 }
 .right-align {
-  text-align: right
+  float: right;
 }
 .center, .center-align {
   text-align: center;
