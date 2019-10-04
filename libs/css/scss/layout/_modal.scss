@@ -19,6 +19,19 @@
                 }
             }
         }
+        &--mob {
+            display: none;
+
+            img {
+                margin-bottom: 1em;
+                -webkit-box-shadow: 0px 1px 5px 1px rgba(65,68,33,0.25); 
+                box-shadow: 0px 1px 5px 1px rgba(65,68,33,0.25);
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
     
     &#project-list, 

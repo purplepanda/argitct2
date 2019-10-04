@@ -1367,6 +1367,15 @@ section.content .content__asset {
 .modal__content--text ul li {
   margin-bottom: 1em; }
 
+.modal__content--mob {
+  display: none; }
+  .modal__content--mob img {
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(65, 68, 33, 0.25);
+    box-shadow: 0px 1px 5px 1px rgba(65, 68, 33, 0.25); }
+    .modal__content--mob img:last-of-type {
+      margin-bottom: 0; }
+
 .modal#project-list, .modal#bio-CV {
   max-width: 900px; }
 
