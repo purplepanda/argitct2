@@ -30,5 +30,5 @@ $('body').on('keydown', function(e) {
 });
 
 $(window).on('resize', function () {
-    closeAllMenus();  
+    closeAllMenus();
 });

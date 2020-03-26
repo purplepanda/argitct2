@@ -9,10 +9,10 @@ $("a[href*='#public']").on("click", function () {
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
-            });    
+            });
         }, 100);
     }
-}); 
+});
 
 $("a[href*='#pri']").on("click", function () {
     var isCarousel = $(this).find('.project__carousel-wrapper') ? true : false,
@@ -25,7 +25,7 @@ $("a[href*='#pri']").on("click", function () {
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
-            });    
+            });
         }, 100);
     }
 });
