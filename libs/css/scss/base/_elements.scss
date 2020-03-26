@@ -183,6 +183,14 @@ ol {
     }    
 }
 
+blockquote {
+    font-family: $fontBookman;
+    font-size: 1.4em;
+    line-height: 1.5;
+    padding: 1em 1em 2em;
+    color: $olive25;
+}
+
 input,
 optgroup,
 select,
