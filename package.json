@@ -9,7 +9,7 @@
   "author": "Amanda Olczak",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
